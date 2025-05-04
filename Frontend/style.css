@@ -10,10 +10,10 @@ body{
 }
 
 .landing-page{
-    background: white url(../quix-app/images/bg1.jpg) no-repeat scroll center;
+    background: white url(../images/bg1.jpg) no-repeat scroll center;
     height: 100vh;
     background-size: cover;
-    color: white;
+    color: yellow;
 }
 
 .landing-page .wrapper{
@@ -34,9 +34,9 @@ body{
 }
 
 .btn{
-    color: white;
+    color: red;
     text-decoration: none;
-    background-color: teal;
+    background-color: rgba(255, 255, 0, 0.76);
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
@@ -44,7 +44,7 @@ body{
 }
 
 .btn:hover{
-    background-color: #a0dd13;
+    background-color: yellow;
 }
 
 
