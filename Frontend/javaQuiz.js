@@ -41,4 +41,26 @@ function displayQuestion(){
         optionsContainer.appendChild(button);
     })
     document.getElementById('current-question').textContent=currentQuestion+1;
+
+}
+
+function checkAnswer(selectedOption){
+    const currentQuestion=questions[currentQuestionIndex];
+    if(selectedOption===currentQuestion.answer){
+        correctAnswers++;
+    }
+    nextQuestion();
+}
+
+function nextQuestion(){
+    if(currentQuestionIndex<questions.length-1){
+        currentQuestionIndex++;
+        displayQuestion();
+    }
+    else{
+        //quiz completed and go to result page
+        localStorage.setItem('quizScore',correctAnswers);  
+        localStorage.setItem('totalQuestions',totalQuestions);
+        window.location.href='result.html';
+    }
 }
